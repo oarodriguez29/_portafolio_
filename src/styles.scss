@@ -1,4 +1,159 @@
 /* You can add global styles to this file, and also import other style files */
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+// html, body { height: 100%; }
+// body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+/* Estilos Globales */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    scroll-behavior: smooth;
+  }
+  
+  /* Barra de navegación */
+  .mat-toolbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+  }
+  
+  .spacer {
+    flex: 1;
+  }
+  
+  /* Héroe */
+  .hero {
+    //background-image: url('assets/img/hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+  }
+  
+  .hero-title {
+    font-size: 3rem;
+    margin: 0;
+  }
+  
+  .hero-subtitle {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .hero button {
+    font-size: 1.2rem;
+  }
+  
+  /* About */
+  .about-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px;
+    background-color: white;
+  }
+  
+  .about-img {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .about-info {
+    max-width: 600px;
+  }
+  
+  .about-info p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+  }
+  
+  /* Projects */
+  .projects-container {
+    padding: 50px;
+    background-color: #fafafa;
+  }
+  
+  .mat-grid-list {
+    margin: 0 auto;
+  }
+  
+  .mat-grid-tile-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /* Contacto */
+  .contact-container {
+    background-color: white;
+    padding: 50px;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .contact-container h4 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+  }
+  
+  .full-width {
+    width: 100%;
+  }
+  
+  button[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 15px;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Responsividad */
+  @media (max-width: 768px) {
+    .hero-title {
+      font-size: 2.2rem;
+    }
+  
+    .hero-subtitle {
+      font-size: 1.2rem;
+    }
+  
+    .about-container {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .about-img {
+      width: 150px;
+      height: 150px;
+    }
+  
+    .projects-container {
+      padding: 20px;
+    }
+  
+    .mat-grid-list {
+      display: grid;
+      grid-template-columns: 1fr;
+    }
+  
+    .contact-container {
+      padding: 20px;
+    }
+  }

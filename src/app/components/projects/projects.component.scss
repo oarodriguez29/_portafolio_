@@ -1,0 +1,26 @@
+.projects-container {
+    padding: 50px;
+    background-color: #fafafa;
+  }
+  
+  .mat-grid-list {
+    margin: 0 auto;
+  }
+  
+  .mat-grid-tile-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  button.mat-button {
+    font-size: 0.9rem;
+  }
+  
+  /* Responsividad */
+  @media (max-width: 768px) {
+    .mat-grid-list {
+      display: grid;
+      grid-template-columns: 1fr;
+    }
+  }
